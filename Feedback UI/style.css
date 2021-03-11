@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: aliceblue;
+  font-family: 'Muli', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.panel-container {
+  background-color: #fff;
+  max-width: 400px;
+  font-size: 90%;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  padding: 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.panel-container strong {
+  line-height: 20px;
+}
+
+.ratings-container {
+  display: flex;
+  margin: 20px 0;
+  width: 100%;
+}
+
+.rating {
+  flex: 1;
+  padding: 20px;
+  margin: 10px 5px;
+  cursor: pointer;
+}
+
+.rating:hover,
+.rating.active {
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.rating img {
+  width: 50px;
+}
+
+.rating small {
+  display: inline-block;
+  margin: 10px 0 0;
+  color: #555;
+}
+
+.rating:hover small,
+.rating.active small {
+  color: #111;
+}
+
+.btn {
+  background-color: peru;
+  color: #fff;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  font-family: inherit;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn:active {
+  transform: scale(0.95);
+}
+
+.fa-heart {
+  color: red;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
